@@ -1,13 +1,19 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: #f9f9f9;
-  color: #333333;
+  background-color: #fef6e4;
+  color: #4a2f1c;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   width: 900px;
-  margin: 0 auto;
+  margin: 30px auto;
+  background-color: #fffaf2;
+  padding: 30px;
+  border: 1px solid #e5d8c2;
+  border-radius: 10px;
 }
 
 h1 {
@@ -19,4 +25,23 @@ h1 {
 main > h2 {
   text-align: center;
   font-size: 25px;
+  margin-bottom: 30px;
+}
+
+section {
+  margin-top: 30px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4a2f1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
