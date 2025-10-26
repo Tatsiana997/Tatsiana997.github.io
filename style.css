@@ -1,47 +1,46 @@
 body {
-  font-family: sans-serif;
-  line-height: 1.5;
-  background-color: #fef6e4;
-  color: #4a2f1c;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
-main {
-  width: 900px;
-  margin: 30px auto;
-  background-color: #fffaf2;
-  padding: 30px;
-  border: 1px solid #e5d8c2;
-  border-radius: 10px;
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;            /* расстояние между карточками */
+  flex-wrap: wrap;      /* перенос на следующую строку, если не помещаются */
 }
 
-h1 {
+.card {
+  background-color: #fff;
+  border-radius: 10px;  /* закругляем углы */
+  padding: 20px;
+  width: 250px;
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-main > h2 {
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 30px;
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   /* делаем изображение круглым */
+  object-fit: cover;    /* чтобы картинка не растягивалась */
+  margin-bottom: 15px;
 }
 
-section {
-  margin-top: 30px;
+.card h2 {
+  font-size: 1.2em;
+  margin: 0;
 }
 
-ul {
-  padding-left: 20px;
+.card h3 {
+  font-size: 1em;
+  color: #666;
+  margin: 5px 0 10px;
 }
 
-a.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4a2f1c;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.card p {
+  font-size: 0.9em;
+  color: #444;
 }
